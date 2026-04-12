@@ -29,7 +29,11 @@
     }
     .wrap{position:relative; z-index:1;}
     .container{width:min(1100px, calc(100% - 32px)); margin:0 auto;}
-    .hero{min-height:100vh; display:flex; align-items:center; justify-content:center; padding:40px 0 80px;}
+    .hero{min-height:100vh; display:flex; align-items:center; justify-content:center; text-align:center;}
+    .hero-card{
+      margin:0 auto;
+      max-width:800px;
+    }
     .glass{
       background:var(--card); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px);
       border:1px solid rgba(255,255,255,.55); box-shadow:var(--shadow); border-radius:var(--radius);
@@ -98,7 +102,7 @@
     <section class="hero">
       <div class="container">
         <div class="hero-card glass fade">
-          <div class="eyebrow">Wedding Invitation</div>
+          <div class="eyebrow"><b>Wedding Invitation</b></div>
           <h1>Валентина <span style="color:#5b88cc;">&</span> Андрій</h1>
           <p class="subtitle">Ми з радістю запрошуємо вас розділити з нами один із найважливіших днів нашого життя.</p>
           <div class="date-pill">12 червня 2026 • 15:00</div>
@@ -170,9 +174,8 @@
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_next" value="https://krak3n27.github.io/wedding-invite/">
-            <div class="grid two">
+            <div class="grid">
               <input type="text" name="Ім'я" placeholder="Ваше ім'я та прізвище" required>
-              <input type="email" name="Email" placeholder="Ваш email" required>
             </div>
             <div class="grid two">
               <select name="Присутність" required>
